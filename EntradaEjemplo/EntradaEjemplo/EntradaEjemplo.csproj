@@ -1,0 +1,994 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A90E6597-4A1B-4102-8D0C-63A4D81A2E0C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EntradaEjemplo</RootNamespace>
+    <AssemblyName>EntradaEjemplo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\activity.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplay.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert-octagon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert-triangle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align-center.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align-justify.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anchor.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aperture.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-left-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-right-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at-sign.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\award.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery-charging.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bold.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cast.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-square.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevrons-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevrons-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevrons-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevrons-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chrome.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-drizzle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-lightning.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-rain.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-snow.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codepen.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codesandbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\columns.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compass.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-down-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-down-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-left-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-left-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-right-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-right-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-up-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-up-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cpu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crosshair.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disc.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divide.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divide-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divide-square.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar-sign.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-cloud.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dribbble.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\droplet.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\external-link.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-forward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feather.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figma.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-minus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-plus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-text.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-minus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-plus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\framer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frown.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\git-branch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\git-commit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gitlab.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\git-merge.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\git-pull-request.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hard-drive.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hash.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headphones.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hexagon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italic.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layers.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life-buoy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loader.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-pin.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meh.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message-square.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mic.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mic-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-square.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more-horizontal.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more-vertical.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse-pointer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigation.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigation-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octagon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paperclip.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen-tool.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percent.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-forwarded.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-incoming.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-missed.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-outgoing.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie-chart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-square.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pocket.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radio.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-ccw.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-cw.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate-ccw.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate-cw.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rss.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-bag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skip-back.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skip-forward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slack.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slash.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sliders.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartphone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smile.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunrise.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunset.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablet.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\target.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminal.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermometer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbs-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbs-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trello.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trending-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trending-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tv.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\type.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umbrella.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-cloud.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-check.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-minus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-plus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-x.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voicemail.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-x.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wind.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-octagon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-square.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zap.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zap-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-out.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\writing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %283%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

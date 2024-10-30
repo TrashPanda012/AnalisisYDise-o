@@ -1,0 +1,14 @@
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\bin\Debug\EntradaEjemplo.exe.config
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\bin\Debug\EntradaEjemplo.exe
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\bin\Debug\EntradaEjemplo.pdb
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\bin\Debug\MetroFramework.Design.dll
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\bin\Debug\MetroFramework.dll
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\obj\Debug\EntradaEjemplo.csproj.AssemblyReference.cache
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\obj\Debug\EntradaEjemplo.Form1.resources
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\obj\Debug\EntradaEjemplo.Properties.Resources.resources
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\obj\Debug\EntradaEjemplo.csproj.GenerateResource.cache
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\obj\Debug\EntradaEjemplo.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\obj\Debug\EntradaE.8522E04D.Up2Date
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\obj\Debug\EntradaEjemplo.exe
+C:\Users\Kevin Browne\OneDrive\Documents\UAM\Análisis y Diseño de Sistemas\EntradaEjemplo\EntradaEjemplo\obj\Debug\EntradaEjemplo.pdb
